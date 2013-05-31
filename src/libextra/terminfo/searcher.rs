@@ -15,7 +15,7 @@ use core::prelude::*;
 use core::{os, str};
 use core::os::getenv;
 use core::io::{file_reader, Reader};
-use path = core::path::PosixPath;
+use path = core::path::Path;
 
 /// Return path to database entry for `term`
 pub fn get_dbpath_for_term(term: &str) -> Option<~path> {
