@@ -117,7 +117,7 @@ pub impl Terminal {
 #[cfg(target_os = "win32")]
 pub impl Terminal {
     pub fn new(out: @io::Writer) -> Result<Terminal, ~str> {
-        return Ok(Terminal {out: out, color_supported: cs});
+        return Ok(Terminal {out: out, color_supported: false});
     }
 
     fn fg(&self, color: u8) {
